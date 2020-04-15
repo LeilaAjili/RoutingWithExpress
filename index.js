@@ -18,13 +18,13 @@ app.use('/',(req, res, next) => {
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/home.html');
+    res.sendFile(__dirname + '/public/home.html');
 })
 .get('/contact', (req, res) => {
-    res.sendFile(__dirname + '/contact.html');
+    res.sendFile(__dirname + '/public/contact.html');
 })
 .get('/ourservices', (req, res) => {
-    res.sendFile(__dirname + '/ourservices.html');
+    res.sendFile(__dirname + '/public/ourservices.html');
 });
 
 
